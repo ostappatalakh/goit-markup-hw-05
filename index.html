@@ -49,7 +49,7 @@
             <div class="container">
                 <div class="hero">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="btn-hero">Заказать услугу</button>
+                    <button type="button" class="btn-hero" data-modal-open>Заказать услугу</button>
                 </div>
             </div>
             </section>
@@ -104,9 +104,18 @@
                     Чем мы занимаемся
                 </h2>
                 <ul class="job-list list">
-                    <li class="job-item"><img src="./images/programming.jpg" alt="програмирование" width="370" height="294" class="our-jobs-description"></li>
-                    <li class="job-item"><img src="./images/layout.jpg" alt="верстка" width="370" height="294" class="our-jobs-description"></li>
-                    <li class="job-item"><img src="./images/design.jpg" alt="дизайн" width="370" height="294" class="our-jobs-description"></li>
+                    <li class="job-item">
+                        <img src="./images/programming.jpg" alt="програмирование" width="370" height="294">
+                        <span class="our-jobs-description">Десктопные приложения</span>
+                    </li>
+                    <li class="job-item">
+                        <img src="./images/layout.jpg" alt="верстка" width="370" height="294">
+                        <span class="our-jobs-description">Мобильные приложения</span>
+                    </li>
+                    <li class="job-item">
+                        <img src="./images/design.jpg" alt="дизайн" width="370" height="294">
+                        <span class="our-jobs-description">Дизайнерские решения</span>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -387,5 +396,17 @@
             </div>
         </div>
     </footer>
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="close-modal" type="button" data-modal-close>
+            <svg class="icon-modal" width="30" height="30" aria-label="закрыть окно">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+    
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html> 
